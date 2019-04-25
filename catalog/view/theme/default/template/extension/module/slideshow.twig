@@ -1,0 +1,98 @@
+{# <div class="slider-wrap">
+  <div id="slideshow{{ module }}" class="fullwidthbanner-container">
+    <div class="fullwidthbanner">
+      {% for banner in banners %}
+      <div class="tp-caption large_black sfr" data-x="150" data-y="350" data-speed="1100"
+							data-start="1100" data-easing="easeInOutBack"
+							style="font-size: 18px; font-weight: bold; text-transform: uppercase; color: #FFF;">{% if banner.link %}<a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>{% else %}<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />{% endif %}</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="swiper-pagination slideshow{{ module }}"></div>
+  <div class="swiper-pager">
+    <div style="position: absolute; top: 484px; margin-top: -50px; left: 0px;" class="tp-leftarrow tparrows default preview1 hidearrows"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(&quot;img/slider/slide-img2.jpg&quot;);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>
+    <div style="position: absolute; top: 484px; margin-top: -50px; right: 0px;" class="tp-rightarrow tparrows default preview1"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder" style="visibility: inherit; opacity: 1; background-image: url(&quot;img/slider/slide-img2.jpg&quot;);"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>
+  </div>
+</div>
+<script type="text/javascript"><!--
+  $('#slideshow{{ module }}').swiper({
+    mode: 'horizontal',
+    slidesPerView: 1,
+    pagination: '.slideshow{{ module }}',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: true,
+    loop: true
+  });
+--></script>  #}
+
+	<div class="slider-wrap">
+		<div class="fullwidthbanner-container">
+			<div class="fullwidthbanner">
+				<ul>
+					<li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+						<img src="catalog/view/javascript/bootstrap/img/slider/slide-img1.jpg" alt="slide">
+						<div class="tp-caption large_black sfr" data-x="150" data-y="350" data-speed="1100"
+							data-start="1100" data-easing="easeInOutBack"
+							style="font-size: 18px; font-weight: bold; text-transform: uppercase; color: #FFF;">
+							tecidos excelentes
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="375" data-speed="1100"
+							data-start="1100" data-easing="easeInOutBack"
+							style="border-width: 2px; background-color: #ffffff; min-height: 1px;min-width: 400px;">
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="400" data-speed="1100"
+							data-start="1400" data-easing="easeInOutBack"
+							style=" font-size: 100px; font-weight: 800; line-height:80px;text-transform: uppercase; color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.05)">
+							Camisas Personalizadas
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="500" data-speed="1100"
+							data-start="1400" data-easing="easeInOutBack"
+							style=" font-size: 20px; font-weight: normal; color: #FFF;line-height:14px;text-transform: uppercase;">
+							Camisas de diversos temas para atender o seu gosto
+						</div>
+						<div class="tp-caption lfb carousel-caption-inner" data-x="150" data-y="550" data-speed="1300"
+							data-start="1700" data-easing="easeInOutBack"
+							style=" font-size: 17px; font-weight: bold; text-transform: uppercase; color: #F3F3F3;">
+							<a href="#" class="s-btn"
+								style="background: #a37832; color: #ffffff;display: block;padding: 12px 28px;">Compre
+								agora</a>
+						</div>
+					</li>
+
+					<li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+						<img src="catalog/view/javascript/bootstrap/img/slider/slide-img2.jpg" alt="slide">
+						<div class="tp-caption large_black sfr" data-x="150" data-y="350" data-speed="1100"
+							data-start="1100" data-easing="easeInOutBack"
+							style="font-size: 18px; font-weight: bold; text-transform: uppercase; color: #FFF;">
+							Design diversos
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="375" data-speed="1100"
+							data-start="1100" data-easing="easeInOutBack"
+							style="border-width: 2px; background-color: #ffffff; min-height: 1px;min-width: 400px;">
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="400" data-speed="1100"
+							data-start="1400" data-easing="easeInOutBack"
+							style=" font-size: 100px; font-weight: 800; line-height:80px;text-transform: uppercase; color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.05)">
+							Canecas personalizadas
+						</div>
+						<div class="tp-caption large_black sfr" data-x="150" data-y="500" data-speed="1100"
+							data-start="1400" data-easing="easeInOutBack"
+							style=" font-size: 20px; font-weight: normal; color: #FFF;line-height:14px;text-transform: uppercase;">
+							Canecas com o seu tema preferido
+						</div>
+						<div class="tp-caption lfb carousel-caption-inner" data-x="150" data-y="550" data-speed="1300"
+							data-start="1700" data-easing="easeInOutBack"
+							style=" font-size: 17px; font-weight: bold; text-transform: uppercase; color: #F3F3F3;">
+							<a href="#" class="s-btn"
+								style="background:#a37832;color: #ffffff;display: block;padding: 12px 28px;">Compre
+								Agora</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>

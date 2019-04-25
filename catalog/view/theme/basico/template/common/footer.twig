@@ -1,0 +1,99 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      {% if informations %}
+      <div class="col-sm-3">
+        <h5>{{ text_information }}</h5>
+        <ul class="list-unstyled">
+         {% for information in informations %}
+          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="col-sm-3">
+        <h5>{{ text_service }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          <li><a href="{{ return }}">{{ text_return }}</a></li>
+          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>{{ text_extra }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+          <li><a href="{{ special }}">{{ text_special }}</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>{{ text_account }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ account }}">{{ text_account }}</a></li>
+          <li><a href="{{ order }}">{{ text_order }}</a></li>
+          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p>{{ powered }}</p>
+  </div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+
+	<!-- footer end -->
+
+	<!-- JS -->
+
+	<!-- jquery js -->
+	<script src="catalog/view/javascript/bootstrap/js/vendor/jquery-1.12.0.min.js"></script>
+
+	<!-- price-slider js -->
+	<script src="catalog/view/javascript/bootstrap/js/price-slider.js"></script>
+
+	<!-- bootstrap js -->
+	<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- owl.carousel.min js -->
+	<script src="catalog/view/javascript/bootstrap/js/owl.carousel.min.js"></script>
+
+	<!-- jquery.scrollUp js -->
+	<script src="catalog/view/javascript/bootstrap/js/jquery.scrollUp.min.js"></script>
+
+	<!-- mixitup js -->
+	<script src="catalog/view/javascript/bootstrap/js/jquery.mixitup.min.js"></script>
+
+	<!-- fancybox js -->
+	<script src="catalog/view/javascript/bootstrap/js/fancybox/jquery.fancybox.pack.js"></script>
+
+	<!-- jquery-counterup js -->
+	<script src="catalog/view/javascript/bootstrap/js/jquery.counterup.min.js"></script>
+	<script src="catalog/view/javascript/bootstrap/js/waypoints.min.js"></script>
+
+	<!-- jquery-meanmenu js -->
+	<script src="catalog/view/javascript/bootstrap/js/jquery.meanmenu.js"></script>
+
+	<!-- RS-Plugin JS
+		============================================ -->
+	<script type="text/javascript" src="catalog/view/javascript/bootstrap/lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="catalog/view/javascript/bootstrap/lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="catalog/view/javascript/bootstrap/lib/rs-plugin/rs.home.js"></script>
+
+	<!-- plugins js -->
+	<script src="catalog/view/javascript/bootstrap/js/plugins.js"></script>
+
+	<!-- main js -->
+	<script src="catalog/view/javascript/bootstrap/js/main.js"></script>
+
+
+</body>
+</html>

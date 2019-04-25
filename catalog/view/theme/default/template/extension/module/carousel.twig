@@ -1,0 +1,60 @@
+
+{# 
+<div class="swiper-viewport">
+  <div id="carousel{{ module }}" class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for banner in banners %}
+      <div class="swiper-slide text-center">{% if banner.link %}<a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>{% else %}<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />{% endif %}</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="swiper-pagination carousel{{ module }}"></div>
+  <div class="swiper-pager">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+<script type="text/javascript"><!--
+  $('#carousel{{ module }}').swiper({
+    mode: 'horizontal',
+    slidesPerView: 5,
+    pagination: '.carousel{{ module }}',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    autoplay: 2500,
+    loop: true
+  });
+--></script> #}
+
+<!-- brand-area start -->
+	<div class="brand-area pad-60">
+		<div class="container">
+			<!-- section-heading start -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h1>Nossas artes</h1>
+						<div class="title-icon">
+							<span><i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- section-heading end -->
+			<div class="row">
+				<div class="brand-curosel">
+        {% for banner in banners %}
+					<!-- single-brand start -->
+					<div class="col-md-2">
+						<div class="single-brand">
+							<a href="{{banner.link}}"><img src="{{ banner.image }}" alt="" /></a>
+						</div>
+					</div>
+					<!-- single-brand end -->
+          {% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- brand-area end -->
