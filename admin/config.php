@@ -1,18 +1,18 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/opencart/admin/');
-define('HTTP_CATALOG', 'http://localhost/opencart/');
+define('HTTP_SERVER', 'http://localhost/OC_fiodourado/admin/');
+define('HTTP_CATALOG', 'http://localhost/OC_fiodourado/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/opencart/admin/');
-define('HTTPS_CATALOG', 'http://localhost/opencart/');
+define('HTTPS_SERVER', 'http://localhost/OC_fiodourado/admin/');
+define('HTTPS_CATALOG', 'http://localhost/OC_fiodourado/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/xampp/htdocs/opencart/admin/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/opencart/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/opencart/image/');
-define('DIR_STORAGE', 'C:/xampp/storage/');
-define('DIR_CATALOG', 'C:/xampp/htdocs/opencart/catalog/');
+define('DIR_APPLICATION', 'C:/wamp64/www/OC_fiodourado/admin/');
+define('DIR_SYSTEM', 'C:/wamp64/www/OC_fiodourado/system/');
+define('DIR_IMAGE', 'C:/wamp64/www/OC_fiodourado/image/');
+define('DIR_STORAGE', 'C:/wamp64/www/storage/');
+define('DIR_CATALOG', 'C:/wamp64/www/OC_fiodourado/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -30,7 +30,7 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'fiodourado');
 define('DB_PORT', '3306');
-define('DB_PREFIX', 'fd_');
+define('DB_PREFIX', 'oc_');
 
 // OpenCart API
 define('OPENCART_SERVER', 'https://www.opencart.com/');

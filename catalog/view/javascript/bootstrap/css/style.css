@@ -1524,9 +1524,12 @@ padding: 0 0 0 10px;}
     border-color: #e8e8e9 #e8e8e9 -moz-use-text-color;
     border-style: solid solid solid;
     border-width: 1px 1px 1px;
-    float: left;
+    left: 35%;
+    position: relative;
     padding: 20px 25px;
     width: 100%;
+    margin-top: 38px;
+    margin-bottom: 38px;
     }
     
     .form-fields1 h2{border-bottom: 1px solid #e8e8e9;
@@ -1541,13 +1544,24 @@ padding: 0 0 0 10px;}
       font-weight: 400;
       margin: 0 0 5px;
     }
-    .form-fields1 p label span.required{}
+    .form-fields1  input[type="text"], input[type="password"]{background: #fff none repeat scroll 0 0;
+      border: 1px solid #595d4e;
+      border-radius: 0;
+      height: 32px;
+      width: 100%;
+      padding: 0 0 0 10px;}
+    
+
+
+
     .form-fields1 p input{background: #fff none repeat scroll 0 0;
     border: 1px solid #595d4e;
     border-radius: 0;
     height: 32px;
     width: 100%;
     padding: 0 0 0 10px;}
+
+
     .form-fields1 i{width: 20px;}
     .form-fields1 select{background: #fff none repeat scroll 0 0;
       border: 1px solid #595d4e;
