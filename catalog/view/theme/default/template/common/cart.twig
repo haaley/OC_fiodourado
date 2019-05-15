@@ -51,57 +51,75 @@
 </div> #}
 
 
-						<div id="cart" class="cart-total">
-							<ul>
-									{% if products or vouchers %}
-								
-								<li><a href="{{ cart }}"><span class="cart-icon"><i
-												class="fa fa-shopping-cart"></i></span> <span class="cart-no">{{ text_items }}</span></a>
-                        	{% for product in products %}
-									<div class="mini-cart-content">
-										<div class="cart-img-details">
-											<div class="cart-img-photo">
-												<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" /></a>
-												<span class="quantity">{{ product.quantity }}</span>
-											</div>
-											<div class="cart-img-contaent">
-												<a href="{{ product.href }}">
-													<p>{{ product.name }}</p>
-												</a>
-												<span>{{ product.total }}</span>
-											</div>
-											<div class="pro-del"><button type="button" onclick="cart.remove('{{ product.cart_id }}');" title="{{ button_remove }}" <i class="fa fa-times-circle"></i></button>
-											</div>
-										</div>
-										<div class="clear"></div>
-                             {% endfor %}
-										<div class="cart-inner-bottom">
-												{% for total in totals %}
-											<p class="total">{{ total.title }}: <span class="amount">{{ total.text }}</span></p>
-											{% endfor %}
-											<div class="clear"></div>
-											<p class="cart-button-top"><a href="{{ checkout }}">{{ text_checkout }}</a></p>
-										</div>
-									</div>
-								</li>
-                   {% else %}
-                <li>
-                  <a href="{{ cart }}"><span class="cart-icon"><i
-												class="fa fa-shopping-cart"></i></span> <span class="cart-no">{{ text_items }}</span></a>
-									<div class="mini-cart-content">
-										<div class="cart-img-details">
-                       <p class="text-center">{{ text_empty }}</p>
-										<div class="clear"></div>
-										<div class="cart-inner-bottom">
-												{% for total in totals %}
-											<p class="total">{{ total.title }}: <span class="amount">{{ total.text }}</span></p>
-											{% endfor %}
-											<div class="clear"></div>
-											<p class="cart-button-top"><a href="{{ checkout }}">{{ text_checkout }}</a></p>
-										</div>
-									</div>
+<div class="cart-total" id="cart">
+    <ul>
+        {% if products or vouchers %}
+
+            <li>
+                <a href="{{ cart }}">
+                    <span class="cart-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-no">{{ text_items }}</span>
+                </a>
+                {% for product in products %}
+                    <div class="mini-cart-content">
+                        <div class="cart-img-details">
+                            <div class="cart-img-photo">
+                                <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}"/></a>
+                                <span class="quantity">{{ product.quantity }}</span>
+                            </div>
+                            <div class="cart-img-contaent">
+                                <a href="{{ product.href }}">
+                                    <p>{{ product.name }}</p>
+                                </a>
+                                <span>{{ product.total }}</span>
+                            </div>
+                            <div class="pro-del">
+                                <button</i type="button" onclick="cart.remove('{{ product.cart_id }}');" title="{{ button_remove }}" <i class="fa fa-times-circle">></button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    {% endfor %}
+                    <div class="cart-inner-bottom">
+                        {% for total in totals %}
+                            <p class="total">{{ total.title }}:
+                                <span class="amount">{{ total.text }}</span>
+                            </p>
+                        {% endfor %}
+                        <div class="clear"></div>
+                        <p class="cart-button-top">
+                            <a href="{{ checkout }}">{{ text_checkout }}</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        {% else %}
+            <li>
+                <a href="{{ cart }}">
+                    <span class="cart-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span class="cart-no">{{ text_items }}</span>
+                </a>
+                <div class="mini-cart-content">
+                    <div class="cart-img-details">
+                        <p class="text-center">{{ text_empty }}</p>
+                        <div class="clear"></div>
+                        <div class="cart-inner-bottom">
+                            {% for total in totals %}
+                                <p class="total">{{ total.title }}:
+                                    <span class="amount">{{ total.text }}</span>
+                                </p>
+                            {% endfor %}
+                            <div class="clear"></div>
+                            <p class="cart-button-top">
+                                <a href="{{ checkout }}">{{ text_checkout }}</a>
+                            </p>
+                        </div>
+                    </div>
                 </li>
-                
-                {% endif %}
-							</ul>
-						</div>
+
+            {% endif %}
+        </ul>
+    </div>
