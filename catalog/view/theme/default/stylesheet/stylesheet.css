@@ -1610,9 +1610,22 @@ top: 2px;}
   }
 
 .form-action3 a{
+  background: #353434 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 40px;
+  text-shadow: none;
+  text-transform: uppercase;
   transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: #777;}
+  margin-left: 15px;}
 
   .form-action3 a:hover{color:#a37832}
 
@@ -1636,7 +1649,7 @@ top: 2px;}
   border-radius: 4px;
 }
 
-.form-action3 input[type="submit"]:hover{background:#a37832S}
+.form-action3 input[type="submit"]:hover{background:#a37832}
 
 
 /*=========================== 
