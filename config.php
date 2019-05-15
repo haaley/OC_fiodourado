@@ -6,10 +6,10 @@ define('HTTP_SERVER', 'http://localhost/opencart/');
 define('HTTPS_SERVER', 'http://localhost/opencart/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/xampp/htdocs/opencart/catalog/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/opencart/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/opencart/image/');
-define('DIR_STORAGE', 'C:/xampp/storage/');
+define('DIR_APPLICATION', 'C:/wamp64/www/opencart/catalog/');
+define('DIR_SYSTEM', 'C:/wamp64/www/opencart/system/');
+define('DIR_IMAGE', 'C:/wamp64/www/opencart/image/');
+define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -27,4 +27,4 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'fiodourado');
 define('DB_PORT', '3306');
-define('DB_PREFIX', 'fd_');
+define('DB_PREFIX', 'oc_');

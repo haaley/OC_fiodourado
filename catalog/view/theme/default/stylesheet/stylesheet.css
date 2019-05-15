@@ -1490,7 +1490,8 @@ border-width: 1px 1px 1px;
 float: left;
 padding: 20px 25px;
 width: 100%;
-margin: 15px;}
+margin: 45px 10px 0px;
+}
 
   .form-fields h2{border-bottom: 1px solid #e8e8e9;
 font-size: 18px;
@@ -1588,7 +1589,19 @@ margin: 0;}
 
 .form-action input[type="submit"]:hover{background:#a37832}
 
-.form-action2{background: #f5f5f5 none repeat scroll 0 0;
+
+.form-action input[type="submit"]:hover{background:#a37832}
+
+.form-action label{float: right;
+font-weight: normal;
+line-height: 36px;
+margin: 0 20px 0 0;}
+.form-action label input{margin-right: 3px;
+margin-top: 0;
+position: relative;
+top: 2px;}
+
+.form-action3{background: #f5f5f5 none repeat scroll 0 0;
   border-color: #e8e8e9 #e8e8e9;
   
   border-width:1px 1px 1px;
@@ -1596,24 +1609,14 @@ margin: 0;}
   float: right;
   }
 
-.form-action2 a{
-  background: #353434 none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 0;
-  box-shadow: none;
-  color: #fff;
-  display: inline-block;
-  font-family: Montserrat,Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 40px;
-  text-shadow: none;
-  text-transform: uppercase;
+.form-action3 a{
   transition: all 0.3s ease 0s;
-  margin-left: 15px;}
-.form-action2 input[type="submit"] {
+    text-decoration: none;
+    color: #777;}
+
+  .form-action3 a:hover{color:#a37832}
+
+.form-action3 input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
@@ -1630,21 +1633,12 @@ margin: 0;}
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
   margin-left: 15px;
+  border-radius: 4px;
 }
 
-.form-action2 input[type="submit"]:hover{background:#4b5f0d}
-.form-action2 a:hover{background:#3c5dca}
+.form-action3 input[type="submit"]:hover{background:#a37832S}
 
-.form-action input[type="submit"]:hover{background:#a37832}
 
-.form-action label{float: right;
-font-weight: normal;
-line-height: 36px;
-margin: 0 20px 0 0;}
-.form-action label input{margin-right: 3px;
-margin-top: 0;
-position: relative;
-top: 2px;}
 /*=========================== 
 15. wishlist page
 ============================= */ 
@@ -2685,7 +2679,8 @@ color: #fff;}
 	max-width: 100%;
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+
+  transition: all 0.3s;
 }
 
 .zoom:hover img {
@@ -2707,3 +2702,14 @@ color: #fff;}
 	font-weight: 700;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
+
+.form-register{
+  border-style: solid solid solid;
+    border-width: 1px 1px 1px;
+    float: left;
+    padding: 20px 25px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.gggg{margin-bottom: 30px;}

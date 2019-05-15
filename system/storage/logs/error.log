@@ -1,0 +1,85 @@
+05-05-2019 22:27:00 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+05-05-2019 22:28:03 - PHP Notice:  Undefined index: config_name no arquivo C:\wamp64\www\opencart\install\model\upgrade\1004.php na linha 119
+05-05-2019 22:39:12 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+05-05-2019 22:39:19 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+05-05-2019 23:18:28 - PHP Notice:  Undefined index: config_name no arquivo C:\wamp64\www\opencart\install\model\upgrade\1004.php na linha 119
+08-05-2019 23:19:01 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+10-05-2019 13:24:16 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:24:42 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:24:48 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:25:04 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:25:24 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:28:54 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:42:58 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 13:43:10 - PHP Warning:  filter_var(): Unknown modifier '{' no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 257
+10-05-2019 17:10:46 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:53:44 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:53:59 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:57:58 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:58:04 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 17:58:08 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:03 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:14 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: firstname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 221
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: lastname no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 225
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: telephone no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 237
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 263
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: confirm no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:05:28 - PHP Notice:  Undefined index: password no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 267
+10-05-2019 18:42:12 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 1:15:51 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:00:07 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:01:20 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:01:33 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:02:44 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:05:19 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:08:22 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:09:14 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:11:36 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 190
+11-05-2019 2:11:58 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 190
+11-05-2019 2:17:51 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 190
+11-05-2019 2:19:32 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:19:45 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:19:57 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:20:57 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:21:09 - PHP Notice:  Undefined index: confirm_Email no arquivo C:\wamp64\www\opencart\catalog\controller\account\register.php na linha 283
+11-05-2019 2:23:54 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:32:00 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:33:00 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+11-05-2019 2:34:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+13-05-2019 22:25:45 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77

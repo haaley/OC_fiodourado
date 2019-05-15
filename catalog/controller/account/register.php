@@ -91,6 +91,12 @@ class ControllerAccountRegister extends Controller {
 			$data['error_password'] = '';
 		}
 
+		if (isset($this->error['confirm_Email'])) {
+			$data['error_confirm_email'] = $this->error['confirm_Email'];
+		} else {
+			$data['error_confirm_email'] = '';
+		}
+		
 		if (isset($this->error['confirm'])) {
 			$data['error_confirm'] = $this->error['confirm'];
 		} else {
@@ -174,6 +180,12 @@ class ControllerAccountRegister extends Controller {
 			$data['confirm'] = '';
 		}
 
+		if (isset($this->request->post['confirm_Email'])) {
+			$data['confirm_Email'] = $this->request->post['confirm_Email'];
+		} else {
+			$data['confirm_Email'] = '';
+		}
+
 		if (isset($this->request->post['newsletter'])) {
 			$data['newsletter'] = $this->request->post['newsletter'];
 		} else {
@@ -230,6 +242,8 @@ class ControllerAccountRegister extends Controller {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
+		
+
 		if ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
 			$this->error['warning'] = $this->language->get('error_exists');
 		}
@@ -266,6 +280,10 @@ class ControllerAccountRegister extends Controller {
 
 		if ($this->request->post['confirm'] != $this->request->post['password']) {
 			$this->error['confirm'] = $this->language->get('error_confirm');
+		}
+
+		if ($this->request->post['confirm_Email'] != $this->request->post['email']) {
+			$this->error['confirm_Email'] = $this->language->get('error_confirm_email');
 		}
 
 		// Captcha
