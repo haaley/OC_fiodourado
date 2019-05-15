@@ -479,7 +479,7 @@ visibility: visible;}
 }
 .section-heading {
   font-weight: bold;
-  margin: 0 0 25px;
+  margin: 25px 0 25px;
   position: relative;
   text-align: center;
 }
@@ -2081,10 +2081,11 @@ top: 2px;}
 font-size: 18px;}
 .your-order-table table .order-total td{border-bottom: medium none;}
 .your-order-table table tr.cart_item:hover{background:#F9F9F9}
-.your-order-table table tr.order-total td span {
+
+/* .your-order-table table tr.order-total td span {
   color: #a37832;
   font-size: 20px;
-}
+} */
 .your-order-table table{}
 .payment-method {
   margin-top: 40px;

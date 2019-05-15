@@ -477,12 +477,15 @@ visibility: visible;}
   padding: 60px 0;
   border-top: 1px solid #e1e1e1;
 }
+
 .section-heading {
   font-weight: bold;
-  margin: 0 0 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   position: relative;
   text-align: center;
 }
+
 .section-heading h1 {
   display: inline-block;
   font-size: 20px;
@@ -1987,7 +1990,12 @@ padding: 5px 10px;transition: all 0.3s ease 0s;}
   display:none;
 }
 .checkout-area{}
-.checkbox-form{}
+
+.checkbox-form{
+  margin-right: 110px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
 .checkbox-form h3 {
   border-bottom: 1px solid #e5e5e5;
   font-size: 30px;
@@ -1996,6 +2004,11 @@ padding: 5px 10px;transition: all 0.3s ease 0s;}
   text-transform: uppercase;
   width: 100%;
 }
+
+.checkbox-form p {
+  font-size: 15px;
+}
+
 .country-select{margin-bottom: 30px;
 position: relative;}
 .country-select label,.checkout-form-list label{color: #333;
@@ -2046,7 +2059,10 @@ padding: 15px;width:100%}
 #ship-box-info{display:none}
 
 .your-order{background: #f2f2f2 none repeat scroll 0 0;
-padding: 30px 40px 45px;}
+padding: 30px 40px 57px;
+margin-top: -55px;
+margin-bottom: 34px;}
+
 .your-order h3{border-bottom: 1px solid #d8d8d8;
 font-size: 30px;
 margin: 0 0 20px;
@@ -2078,10 +2094,16 @@ top: 2px;}
 font-size: 18px;}
 .your-order-table table .order-total td{border-bottom: medium none;}
 .your-order-table table tr.cart_item:hover{background:#F9F9F9}
-.your-order-table table tr.order-total td span {
+/* .your-order-table table tr.order-total td span {
+  color: #a37832;
+  font-size: 20px;
+} */
+
+.your-order-table table tr:nth-child(3).order-total td span {
   color: #a37832;
   font-size: 20px;
 }
+
 .your-order-table table{}
 .payment-method {
   margin-top: 40px;
@@ -2111,7 +2133,7 @@ top: -2px;}
 }
 .order-button-payment{}
 .order-button-payment input {
-  background: black none repeat scroll 0 0;
+  background: #a37832 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
   font-size: 17px;
@@ -2121,7 +2143,7 @@ top: -2px;}
   padding: 0;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
-  width: 100%;
+  width: 50%;
 }
 .order-button-payment input:hover{background:#a37832}
 /*=========================== 
@@ -2534,11 +2556,21 @@ text-transform: uppercase;}
   text-transform: uppercase;
   padding-bottom: 8px;
 }
-.contact-info h3:before{content: "";
-display: inline-block;
-font-family: FontAwesome;
-margin-right: 5px;
-vertical-align: text-bottom;}
+
+.checkout-form h3 {
+  border-bottom: 2px solid #e8e8e9 !important;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.endereco-info h3:before{content: "";
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 5px;
+  vertical-align: text-bottom;}
+
 .contact-info ul{}
 .contact-info ul li{border-bottom: 1px solid #e8e8e9;
 float: left;
@@ -2558,17 +2590,28 @@ width: 20px;}
 }
 .contact-form input[type="text"], .contact-form input[type="email"] {
   border: 1px solid #ccc;
-  border-radius: 0;
+  border-radius: 5px;
   height: 50px;
   padding-left: 20px;
   width: 100%;
   margin-bottom: 16px;
 }
+
+.checkout-form input[type="text"], .contact-form input[type="email"], .checkout-form input[type="password"], .checkout-form select{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
 .contact-form textarea#message{border: 1px solid #ccc;
 border-radius: 0;
 height: 180px;
 padding: 20px;
 width: 100%;}
+
 .contact-form input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
@@ -2583,6 +2626,20 @@ width: 100%;}
   margin-top: 16px;
 }
 .contact-form input[type=submit]:hover{background:#a37832}
+
+.checkout-form input[type="button"] {
+  background: #252525 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 40px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.checkout-form input[type=button]:hover{background:#a37832}
 /*=========================== 
 21. error-page
 ============================= */

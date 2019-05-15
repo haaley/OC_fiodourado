@@ -83,3 +83,10 @@
 11-05-2019 2:33:00 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
 11-05-2019 2:34:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
 13-05-2019 22:25:45 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() no arquivo C:\wamp64\www\opencart\system\library\mail\mail.php na linha 77
+15-05-2019 0:27:16 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:19 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:20 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:21 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:23 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:24 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
+15-05-2019 0:27:25 - Exception:  Erro: Não foi possível conectar-se ao banco de dados! no arquivo C:\wamp64\www\opencart\system\library\db\mysqli.php na linha 13
