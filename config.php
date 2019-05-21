@@ -7,17 +7,10 @@ define('HTTP_SERVER', 'http://localhost/OC_fiodourado/');
 define('HTTPS_SERVER', 'http://localhost/OC_fiodourado/');
 
 // DIR
-<<<<<<< HEAD
-define('DIR_APPLICATION', 'C:/wamp64/www/OC_fiodourado/catalog/');
-define('DIR_SYSTEM', 'C:/wamp64/www/OC_fiodourado/system/');
-define('DIR_IMAGE', 'C:/wamp64/www/OC_fiodourado/image/');
-define('DIR_STORAGE', 'C:/wamp64/www/storage/');
-=======
-define('DIR_APPLICATION', 'C:/wamp64/www/opencart/catalog/');
-define('DIR_SYSTEM', 'C:/wamp64/www/opencart/system/');
-define('DIR_IMAGE', 'C:/wamp64/www/opencart/image/');
+define('DIR_APPLICATION', 'C:/xampp/htdocs/OC_fiodourado/catalog/');
+define('DIR_SYSTEM', 'C:/xampp/htdocs/OC_fiodourado/system/');
+define('DIR_IMAGE', 'C:/xampp/htdocs/OC_fiodourado/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
->>>>>>> 09e318ba0d4e9718308ce29cbd1abac116e9f239
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -31,8 +24,8 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');https://github.com/haaley/OC_fiodourado.git
+define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'fiodourado');
+define('DB_DATABASE', 'fio_dourado');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

@@ -1,41 +1,48 @@
-
-
 <!-- mainmenu-area start -->
-		<div class="mainmenu-area">
+<div class="mainmenu-area">
     {% if categories %}
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="mainmenu">
-							<nav>
-								<ul>  
-                <li><a href="{{home}}">Inicio</a></li>      
-                {% for category in categories %}
-                  {% if category.children %}
-									<li>
-                   <a href="{{ category.href }}">{{ category.name }}</a>
-										<ul class="sub-menu">
-                    {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
-                      {% for child in children %}
-                       <li><a href="{{ child.href }}">{{ child.name }}</a></li>
-                      {% endfor %}
-										</ul>
-                    {% endfor %}
-									</li>
-                  {% endif %}
-                {% endfor %}
-                  <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-                  <li><a href="{{ return }}">{{ text_return }}</a></li>
-                  <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
-									<li><a href="#">Contato</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-      {% endif %}
-		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="mainmenu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="{{home}}">Inicio</a>
+                                </li>
+                                {% for category in categories %}
+                                    {% if category.children %}
+                                        <li>
+                                            <a href="{{ category.href }}">{{ category.name }}</a>
+                                            <ul class="sub-menu">
+                                                {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                                                    {% for child in children %}
+                                                        <li>
+                                                            <a href="{{ child.href }}">{{ child.name }}</a>
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endfor %}
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                                <li>
+                                    <a href="{{ return }}">{{ text_return }}</a>
+                                </li>
+                                <li>
+                                    <a href="{{ sitemap }}">{{ text_sitemap }}</a>
+                                </li>
+                                <li>
+                                    <a href="{{ contact }}">{{ text_contact }}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
 
 
 {# <div class="container">

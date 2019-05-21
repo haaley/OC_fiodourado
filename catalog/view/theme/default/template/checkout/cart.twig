@@ -14,224 +14,223 @@
             <button class="close" data-dismiss="alert" type="button">&times;</button>
         </div>
     {% endif %}
-<<<<<<< HEAD
     <div id="content" class="{{ class }}">{{ content_top }}
-      <h1>{{ heading_title }}
-        {% if weight %}
-        &nbsp;eeee
-        {% endif %} </h1>
-      <form action="{{ action }}" method="post" enctype="multipart/form-data">
-        <div class="table-responsive">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <td class="text-center">{{ column_image }}</td>
-                <td class="text-left">{{ column_name }}</td>
-                <td class="text-left">{{ column_model }}</td>
-                <td class="text-left">{{ column_quantity }}</td>
-                <td class="text-right">{{ column_price }}</td>
-                <td class="text-right">{{ column_total }}</td>
-              </tr>
-            </thead>
-            <tbody>
-            {% for product in products %}
-            <tr>
-              <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a> {% endif %}</td>
-              <td class="text-left"><a href="{{ product.href }}">{{ product.name }}</a> {% if not product.stock %} <span class="text-danger">***</span> {% endif %}
-                {% if product.option %}
-                {% for option in product.option %} <br />
-                <small>{{ option.name }}: {{ option.value }}</small> {% endfor %}
-                {% endif %}
-                {% if product.reward %} <br />
-                <small>{{ product.reward }}</small> {% endif %}
-                {% if product.recurring %} <br />
-                <span class="label label-info">{{ text_recurring_item }}</span> <small>{{ product.recurring }}</small> {% endif %}</td>
-              <td class="text-left">{{ product.model }}</td>
-              <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
-                  <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" size="1" class="form-control" />
-                  <span class="input-group-btn">
-                  <button type="submit" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
-                  <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="cart.remove('{{ product.cart_id }}');"><i class="fa fa-times-circle"></i></button>
-                  </span></div></td>
-              <td class="text-right">{{ product.price }}</td>
-              <td class="text-right">{{ product.total }}</td>
-            </tr>
-            {% endfor %}
-            {% for voucher in vouchers %}
-            <tr>
-              <td></td>
-              <td class="text-left">{{ voucher.description }}</td>
-              <td class="text-left"></td>
-              <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
-                  <input type="text" name="" value="1" size="1" disabled="disabled" class="form-control" />
-                  <span class="input-group-btn">
-                  <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="voucher.remove('{{ voucher.key }}');"><i class="fa fa-times-circle"></i></button>
-                  </span></div></td>
-              <td class="text-right">{{ voucher.amount }}</td>
-              <td class="text-right">{{ voucher.amount }}</td>
-            </tr>
-            {% endfor %}
-              </tbody>
-          </table>
-=======
-    {% if success %}
-        <div class="alert alert-success alert-dismissible">
-            <i class="fa fa-check-circle"></i>
-            {{ success }}
-            <button class="close" data-dismiss="alert" type="button">&times;</button>
->>>>>>> 936cec9118035a16959d65b3c3f910c65c7af937
-        </div>
-    {% endif %}
-    {% if error_warning %}
-        <div class="alert alert-danger alert-dismissible">
-            <i class="fa fa-exclamation-circle"></i>
-            {{ error_warning }}
-            <button class="close" data-dismiss="alert" type="button">&times;</button>
-        </div>
-<<<<<<< HEAD
-      </div>
-      <div class="buttons clearfix">
-      <div class="gggg">
-        <div class="pull-left"><a href="{{ continue }}" class="btn btn-default ">{{ button_shopping }}</a></div>
-        <div class="pull-right"><a href="{{ checkout }}" class="btn btn-primary">{{ button_checkout }}</a></div>
-      </div>
-      </div>
-      {{ content_bottom }}</div>
-    {{ column_right }}</div>
-=======
-    {% endif %}
-    <div class="row">{{ column_left }}
-        {% if column_left and column_right %}
-            {% set class = 'col-sm-6' %}
-        {% elseif column_left or column_right %}
-            {% set class = 'col-sm-9' %}
-        {% else %}
-            {% set class = 'col-sm-12' %}
-        {% endif %}
-        <div id="content" class="{{ class }}">{{ content_top }}
-            <h1>{{ heading_title }}
-                {% if weight %}
-                    &nbsp;({{ weight }})
-                {% endif %}
-            </h1>
-            <form action="{{ action }}" method="post" enctype="multipart/form-data">
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <td class="text-center">{{ column_image }}</td>
-                                <td class="text-left">{{ column_name }}</td>
-                                <td class="text-left">{{ column_model }}</td>
-                                <td class="text-left">{{ column_quantity }}</td>
-                                <td class="text-right">{{ column_price }}</td>
-                                <td class="text-right">{{ column_total }}</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for product in products %}
-                                <tr>
-                                    <td class="text-center">
-                                        {% if product.thumb %}
-                                            <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail"/></a>
-                                        {% endif %}
-                                    </td>
-                                    <td class="text-left">
-                                        <a href="{{ product.href }}">{{ product.name }}</a>
-                                        {% if not product.stock %}
-                                            <span class="text-danger">***</span>
-                                        {% endif %}
-                                        {% if product.option %}
-                                            {% for option in product.option %}
-                                                <br/>
-                                                <small>{{ option.name }}:
-                                                    {{ option.value }}</small>
-                                            {% endfor %}
-                                        {% endif %}
-                                        {% if product.reward %}
-                                            <br/>
-                                            <small>{{ product.reward }}</small>
-                                        {% endif %}
-                                        {% if product.recurring %}
-                                            <br/>
-                                            <span class="label label-info">{{ text_recurring_item }}</span>
-                                            <small>{{ product.recurring }}</small>
-                                        {% endif %}
-                                    </td>
-                                    <td class="text-left">{{ product.model }}</td>
-                                    <td class="text-left">
-                                        <div class="input-group btn-block" style="max-width: 200px;">
-                                            <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" size="1" class="form-control"/>
-                                            <span class="input-group-btn">
-                                                <button type="submit" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary">
-                                                    <i class="fa fa-refresh"></i>
-                                                </button>
-                                                <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="cart.remove('{{ product.cart_id }}');">
-                                                    <i class="fa fa-times-circle"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="text-right">{{ product.price }}</td>
-                                    <td class="text-right">{{ product.total }}</td>
-                                </tr>
-                            {% endfor %}
-                            {% for voucher in vouchers %}
-                                <tr>
-                                    <td></td>
-                                    <td class="text-left">{{ voucher.description }}</td>
-                                    <td class="text-left"></td>
-                                    <td class="text-left">
-                                        <div class="input-group btn-block" style="max-width: 200px;">
-                                            <input class="form-control" disabled="disabled" name="" size="1" type="text" value="1"/>
-                                            <span class="input-group-btn">
-                                                <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="voucher.remove('{{ voucher.key }}');">
-                                                    <i class="fa fa-times-circle"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td class="text-right">{{ voucher.amount }}</td>
-                                    <td class="text-right">{{ voucher.amount }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </form>
-            {% if modules %}
-                <h2>{{ text_next }}</h2>
-                <p>{{ text_next_choice }}</p>
-                <div class="panel-group" id="accordion">
-                    {% for module in modules %}
-                        {{ module }}
-                    {% endfor %}
-                </div>
+        <h1>{{ heading_title }}
+            {% if weight %}
+                &nbsp;
             {% endif %}
-            <br/>
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-8">
-                    <table class="table table-bordered">
-                        {% for total in totals %}
+        </h1>
+        <form action="{{ action }}" method="post" enctype="multipart/form-data">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td class="text-center">{{ column_image }}</td>
+                            <td class="text-left">{{ column_name }}</td>
+                            <td class="text-left">{{ column_model }}</td>
+                            <td class="text-left">{{ column_quantity }}</td>
+                            <td class="text-right">{{ column_price }}</td>
+                            <td class="text-right">{{ column_total }}</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
                             <tr>
-                                <td class="text-right">
-                                    <strong>{{ total.title }}:</strong>
+                                <td class="text-center">
+                                    {% if product.thumb %}
+                                        <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail"/></a>
+                                    {% endif %}
                                 </td>
-                                <td class="text-right">{{ total.text }}</td>
+                                <td class="text-left">
+                                    <a href="{{ product.href }}">{{ product.name }}</a>
+                                    {% if not product.stock %}
+                                        <span class="text-danger">***</span>
+                                    {% endif %}
+                                    {% if product.option %}
+                                        {% for option in product.option %}
+                                            <br/>
+                                            <small>{{ option.name }}:
+                                                {{ option.value }}</small>
+                                        {% endfor %}
+                                    {% endif %}
+                                    {% if product.reward %}
+                                        <br/>
+                                        <small>{{ product.reward }}</small>
+                                    {% endif %}
+                                    {% if product.recurring %}
+                                        <br/>
+                                        <span class="label label-info">{{ text_recurring_item }}</span>
+                                        <small>{{ product.recurring }}</small>
+                                    {% endif %}
+                                </td>
+                                <td class="text-left">{{ product.model }}</td>
+                                <td class="text-left">
+                                    <div class="input-group btn-block" style="max-width: 200px;">
+                                        <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" size="1" class="form-control"/>
+                                        <span class="input-group-btn">
+                                            <button type="submit" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary">
+                                                <i class="fa fa-refresh"></i>
+                                            </button>
+                                            <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="cart.remove('{{ product.cart_id }}');">
+                                                <i class="fa fa-times-circle"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-right">{{ product.price }}</td>
+                                <td class="text-right">{{ product.total }}</td>
                             </tr>
                         {% endfor %}
-                    </table>
+                        {% for voucher in vouchers %}
+                            <tr>
+                                <td></td>
+                                <td class="text-left">{{ voucher.description }}</td>
+                                <td class="text-left"></td>
+                                <td class="text-left">
+                                    <div class="input-group btn-block" style="max-width: 200px;">
+                                        <input class="form-control" disabled="disabled" name="" size="1" type="text" value="1"/>
+                                        <span class="input-group-btn">
+                                            <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="voucher.remove('{{ voucher.key }}');">
+                                                <i class="fa fa-times-circle"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-right">{{ voucher.amount }}</td>
+                                <td class="text-right">{{ voucher.amount }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% if success %}
+                    <div class="alert alert-success alert-dismissible">
+                        <i class="fa fa-check-circle"></i>
+                        {{ success }}
+                        <button class="close" data-dismiss="alert" type="button">&times;</button>
+                    </div>
+                {% endif %}
+                {% if error_warning %}
+                    <div class="alert alert-danger alert-dismissible">
+                        <i class="fa fa-exclamation-circle"></i>
+                        {{ error_warning }}
+                        <button class="close" data-dismiss="alert" type="button">&times;</button>
+                    </div>
                 </div>
-            </div>
-            <div class="buttons clearfix">
-                <div class="pull-left">
-                    <a href="{{ continue }}" class="btn btn-default">{{ button_shopping }}</a>
+                <divclass="buttonsclearfix">
+                    <divclass="gggg">
+                        <divclass="pull-left">
+                            <ahref="{{continue}}"class="btnbtn-default">{{button_shopping}}</a>
+                        </div>
+                        <divclass="pull-right">
+                            <ahref="{{checkout}}"class="btnbtn-primary">{{button_checkout}}</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pull-right">
-                    <a href="{{ checkout }}" class="btn btn-primary">{{ button_checkout }}</a>
+                {{content_bottom}}</div>
+            {{column_right}}</div>=======<divclass="row">{{column_left}}<divid="content"class="{{class}}">{{content_top}}<h1>{{heading_title}}&nbsp;({{weight}})</h1>
+                <formaction="{{action}}"method="post"enctype="multipart/form-data">
+                    <divclass="table-responsive">
+                        <tableclass="tabletable-bordered">
+                            <thead>
+                                <tr>
+                                    <tdclass="text-center">{{column_image}}</td>
+                                    <tdclass="text-left">{{column_name}}</td>
+                                    <tdclass="text-left">{{column_model}}</td>
+                                    <tdclass="text-left">{{column_quantity}}</td>
+                                    <tdclass="text-right">{{column_price}}</td>
+                                    <tdclass="text-right">{{column_total}}</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <tdclass="text-center">
+                                        <ahref="{{product.href}}"><imgsrc="{{product.thumb}}"alt="{{product.name}}"title="{{product.name}}"class="img-thumbnail"/></a>
+                                    </td>
+                                    <tdclass="text-left">
+                                        <ahref="{{product.href}}">{{product.name}}</a>
+                                        <spanclass="text-danger">***</span><br/><small>{{option.name}}:{{option.value}}</small><br/><small>{{product.reward}}</small><br/><spanclass="labellabel-info">{{text_recurring_item}}</span>
+                                        <small>{{product.recurring}}</small>
+                                    </td>
+                                    <tdclass="text-left">{{product.model}}</td>
+                                    <tdclass="text-left">
+                                        <divclass="input-groupbtn-block"style="max-width:200px;"><inputtype="text"name="quantity[{{product.cart_id}}]"value="{{product.quantity}}"size="1"class="form-control"/><spanclass="input-group-btn">
+                                                <buttontype="submit"data-toggle="tooltip"title="{{button_update}}"class="btnbtn-primary">
+                                                    <iclass="fafa-refresh"></i>
+                                                </button>
+                                                <buttontype="button"data-toggle="tooltip"title="{{button_remove}}"class="btnbtn-danger"onclick="cart.remove('{{product.cart_id}}');">
+                                                    <iclass="fafa-times-circle"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <tdclass="text-right">{{product.price}}</td>
+                                    <tdclass="text-right">{{product.total}}</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <tdclass="text-left">{{voucher.description}}</td>
+                                    <tdclass="text-left"></td>
+                                    <tdclass="text-left">
+                                        <divclass="input-groupbtn-block"style="max-width:200px;"><inputclass="form-control"disabled="disabled"name=""size="1"type="text"value="1"/><spanclass="input-group-btn">
+                                                <buttontype="button"data-toggle="tooltip"title="{{button_remove}}"class="btnbtn-danger"onclick="voucher.remove('{{voucher.key}}');">
+                                                    <iclass="fafa-times-circle"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <tdclass="text-right">{{voucher.amount}}</td>
+                                    <tdclass="text-right">{{voucher.amount}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+                <h2>{{text_next}}</h2>
+                <p>{{text_next_choice}}</p>
+                <divclass="panel-group"id="accordion">{{module}}</div><br/><divclass="row">
+                    <divclass="col-sm-4col-sm-offset-8">
+                        <tableclass="tabletable-bordered">
+                            <tr>
+                                <tdclass="text-right">
+                                    <strong>{{total.title}}:</strong>
+                                </td>
+                                <tdclass="text-right">{{total.text}}</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            {{ content_bottom }}</div>
-        {{ column_right }}</div>
->>>>>>> 936cec9118035a16959d65b3c3f910c65c7af937
+                <divclass="buttonsclearfix">
+                    <divclass="pull-left">
+                        <ahref="{{continue}}"class="btnbtn-default">{{button_shopping}}</a>
+                    </div>
+                    <divclass="pull-right">
+                        <ahref="{{checkout}}"class="btnbtn-primary">{{button_checkout}}</a>
+                    </div>
+                </div>
+                {{content_bottom}}</div>
+            {{column_right}}</div>>>
+    {% endif %}
+    {% if column_left and column_right %}
+        {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+        {% set class = 'col-sm-9' %}
+    {% else %}
+        {% set class = 'col-sm-12' %}
+    {% endif %}
+    {% if weight %}{% endif %}
+    {% for product in products %}
+        {% if product.thumb %}{% endif %}
+        {% if not product.stock %}{% endif %}
+        {% if product.option %}
+            {% for option in product.option %}{% endfor %}
+        {% endif %}
+        {% if product.reward %}{% endif %}
+        {% if product.recurring %}{% endif %}
+    {% endfor %}
+    {% for voucher in vouchers %}{% endfor %}
+    {% if modules %}
+        {% for module in modules %}{% endfor %}
+    {% endif %}
+    {% for total in totals %}{% endfor %}>>>>> 936cec9118035a16959d65b3c3f910c65c7af937
 </div>
 {{ footer }}

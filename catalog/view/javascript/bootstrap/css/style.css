@@ -2769,3 +2769,48 @@ color: #fff;}
 	font-weight: 700;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
+
+.minha_conta {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.minha_conta h2 {
+  border-bottom: #000 solid 1px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.minha_conta ul li {
+  margin-bottom: 13px;
+  
+}
+
+.minha_conta li a {
+  font-size: 16px;
+}
+
+.minha_conta li a:hover {
+  color: #a37832;
+}
+
+.btncontinuar a, input[type="submit"]  { 	
+  background: #252525 none repeat scroll 0 0;    
+  border: medium none;        
+  border-radius: 0;   
+  box-shadow: none;    
+  color:#fff;    
+  text-align: center; 	 
+  display: inline-block;    
+  padding: 10px 15px;   
+  font-size: 12px;    
+  text-transform: uppercase;   
+  margin-bottom: -37px;          
+  font-family: Arial,Helvetica,sans-serif; } 
+
+  .btncontinuar  a:hover, input[type="submit"]:hover  { 	
+   background: #a37832;  
+   color:#fff;
+}
